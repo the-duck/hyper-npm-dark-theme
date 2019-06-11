@@ -1,12 +1,12 @@
 {
-  "name": "hyper-npm-theme",
+  "name": "hyper-npm-dark-theme",
   "version": "0.1.3",
-  "description": "A smart hyper theme inspired by npm",
+  "description": "A dark hyper theme",
   "main": "index.js",
   "author": {
-    "name": "Shuying Lin",
-    "email": "ciao@sylin.me",
-    "url": "https://github.com/B3nnyL"
+    "name": "Mark Spurgeon",
+    "email": "markspurgeon96@gmail.com",
+    "url": "https://github.com/the-duck"
   },
   "keywords": ["hyper.js", "hyper-theme", "npm"],
   "repository": "https://github.com/B3nnyL/hyper-npm",

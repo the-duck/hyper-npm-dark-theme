@@ -1,7 +1,10 @@
-const backgroundColor = '#f3f3f3'
-const foregroundColor = '#6E7278'
+const backgroundColor = '#27292C'
+const foregroundColor = '#C2C7CE'
+const tabBackgroundColor = '#393939'
 const cursorColor = '#6E7278'
-const borderColor = '#f3f3f3'
+const borderColor = '#121212'
+const lightBorderColor = '#222325'
+
 
 const colors = {
 	lightBlack: "#6E7278",
@@ -17,17 +20,24 @@ const colors = {
 	magenta: "#782176",
 	lightMagenta: "#C836C3",
 	lightBlue: "#8A56FF",
-	blue: "#28008A",
+	blue: "#4810D1",
 	lightCyan: "#2AA198",
 	cyan: "#2AA198"
 };
+
+const colorHints = {
+	yellow: "#3F3923",
+	lightRed: "#482C2E",
+	lightMagenta: "#472C4A",
+	lightBlue: "#3B3256",
+}
 
 exports.decorateConfig = config => {
 
   return Object.assign({}, config, {
     foregroundColor,
     backgroundColor,
-    borderColor,
+    borderColor:lightBorderColor,
     cursorColor,
     colors,
     termCSS: `
@@ -43,7 +53,7 @@ exports.decorateConfig = config => {
       	border: 0;
       }
       .tabs_nav {
-        background-color: #f3f3f3;
+        background-color: ${backgroundColor};
         color: ${foregroundColor};
       }
       .tabs_title{
@@ -63,24 +73,24 @@ exports.decorateConfig = config => {
       }
       .tab_tab:nth-child(4n+1).tab_active {
         color: ${colors.yellow};
-        background-color:#FFF5DB;
+        background-color:${colorHints.yellow};
         border-bottom: 2px solid ${colors.yellow} !important;
       }
       .tab_tab:nth-child(4n+2).tab_active{
         font-weight: 700;
         color: ${colors.red};
-        background-color: #fdd8d6;
+        background-color: ${colorHints.lightRed};
         border-bottom: 2px solid ${colors.lightRed} !important;
       }
       .tab_tab:nth-child(4n+3).tab_active {
         font-weight: 700;
         color: ${colors.magenta};
-        background-color: #F6D8F4;
+        background-color: ${colorHints.lightMagenta};
         border-bottom: 2px solid ${colors.lightMagenta} !important;
       }
       .tab_tab:nth-child(4n+4).tab_active {
         color: ${colors.blue};
-        background-color: #E8DEFF
+        background-color: ${colorHints.lightBlue}
         border-bottom: 2px solid ${colors.lightBlue} !important;
       }
       .tab_tab:before {
