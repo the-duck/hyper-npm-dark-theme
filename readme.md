@@ -4,7 +4,7 @@
 
 ### Screenshots
 
-<img align="left" width="700" src="./screenshot.png">
+<img align="center" width="700" src="./screenshot.png">
 
 ### Credits:
 
