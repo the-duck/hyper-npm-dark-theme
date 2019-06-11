@@ -4,7 +4,7 @@
 
 ### Screenshots
 
-<p align="center"> ![general](./screenshot.png) </p>
+<img align="left" width="700" src="./screenshot.png">
 
 ### Credits:
 
